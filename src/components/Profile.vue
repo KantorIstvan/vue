@@ -9,7 +9,7 @@
         </div>
         <div class="hidden md:block">
           <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
-            <span class="text-white text-2xl">👤</span>
+            <!-- Profile header icon removed -->
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@
               <span>{{ userInitials }}</span>
             </div>
             <div class="absolute -bottom-1 -right-1 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center border-4 border-white shadow-sm">
-              <span class="text-white text-sm">✓</span>
+              <!-- Checkmark icon removed -->
             </div>
           </div>
           <h3 class="text-xl font-bold text-gray-900 mb-2">{{ user.firstName }} {{ user.lastName }}</h3>
@@ -43,7 +43,6 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="space-y-2">
               <label class="flex items-center text-sm font-medium text-gray-700">
-                <span class="text-lg mr-2">📧</span>
                 Email Address
               </label>
               <div class="p-3 bg-gray-50 border border-gray-200 rounded-lg text-gray-900 font-medium">
@@ -53,7 +52,6 @@
 
             <div class="space-y-2">
               <label class="flex items-center text-sm font-medium text-gray-700">
-                <span class="text-lg mr-2">👤</span>
                 First Name
               </label>
               <div class="p-3 bg-gray-50 border border-gray-200 rounded-lg text-gray-900 font-medium">
@@ -63,7 +61,6 @@
 
             <div class="space-y-2">
               <label class="flex items-center text-sm font-medium text-gray-700">
-                <span class="text-lg mr-2">👤</span>
                 Last Name
               </label>
               <div class="p-3 bg-gray-50 border border-gray-200 rounded-lg text-gray-900 font-medium">
@@ -73,7 +70,6 @@
 
             <div class="space-y-2">
               <label class="flex items-center text-sm font-medium text-gray-700">
-                <span class="text-lg mr-2">🔐</span>
                 Password
               </label>
               <div class="p-3 bg-gray-50 border border-gray-200 rounded-lg flex items-center justify-between">
@@ -81,7 +77,7 @@
                   {{ showPassword ? user.password : '••••••••••••' }}
                 </span>
                 <button @click="togglePassword" class="text-gray-500 hover:text-gray-700 transition-colors">
-                  {{ showPassword ? '👁️' : '👁️‍🗨️' }}
+                  <!-- Eye icons removed -->
                 </button>
               </div>
             </div>
@@ -91,7 +87,6 @@
         <!-- User Role Section -->
         <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
           <label class="flex items-center text-lg font-semibold text-gray-900 mb-4">
-            <span class="text-xl mr-2">🎭</span>
             User Role & Permissions
           </label>
           <div class="bg-gradient-to-br from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-4">
@@ -105,22 +100,12 @@
                 </div>
                 <p class="text-gray-700">Full administrative access to all dashboard features</p>
               </div>
-              <div class="text-3xl">⚡</div>
+              <!-- Lightning emoji removed -->
             </div>
           </div>
         </div>
 
-        <!-- Action Buttons -->
-        <div class="flex flex-col sm:flex-row gap-3">
-          <button class="flex items-center justify-center space-x-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-all duration-200 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-            <span class="text-lg">✏️</span>
-            <span>Edit Profile</span>
-          </button>
-          <button class="flex items-center justify-center space-x-2 px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-medium rounded-lg transition-all duration-200 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2">
-            <span class="text-lg">🔑</span>
-            <span>Change Password</span>
-          </button>
-        </div>
+
       </div>
     </div>
   </div>
